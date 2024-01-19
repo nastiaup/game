@@ -1,0 +1,60 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  color: #333;
+}
+#tic-tac-toe__board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+.cell {
+  background-color: #fff;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  height: 100px;
+}
+.cell:hover {
+  background-color: #e3e3e3;
+}
+.game-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.wrapper {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__new-game {
+  color: white;
+  text-align: center;
+  background-color: #3c3261;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  max-width: 150px ;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 1s;
+}
+.btn__new-game:hover {
+  background-color: #85838d;
+}
